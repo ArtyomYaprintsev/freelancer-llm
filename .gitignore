@@ -9,3 +9,4 @@ __pycache__/
 # Local files
 *.local
 temp.py
+freelancer_earnings_bd.csv
