@@ -2,7 +2,7 @@ import typer
 from pathlib import Path
 from typing import Annotated
 
-from project.database import validate, setup
+from project.utils import validate, setup
 from project.services.gigachat import get_answer_to_question
 
 
