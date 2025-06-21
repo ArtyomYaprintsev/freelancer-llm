@@ -3,6 +3,7 @@ pandas
 
 kaggle
 
-langchain[google-genai]
+langchain
+langchain-gigachat
 
 typer
