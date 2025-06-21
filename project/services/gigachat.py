@@ -4,12 +4,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.engine import make_url
 from sqlalchemy.schema import CreateTable
 from langchain_gigachat import GigaChat
-from langchain_core.messages import (
-    SystemMessage,
-    HumanMessage,
-    AIMessage,
-    BaseMessage,
-)
+from langchain_core.messages import SystemMessage, HumanMessage, BaseMessage
 
 from project.database import get_engine
 from project.models import Freelancer
