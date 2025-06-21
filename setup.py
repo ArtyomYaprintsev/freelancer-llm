@@ -2,7 +2,7 @@ import typer
 from pathlib import Path
 from typing import Annotated
 
-from project.database import setup as setup_database
+from project.utils import setup as setup_database
 
 
 def setup(
