@@ -1,3 +1,4 @@
+import time
 import typer
 from pathlib import Path
 from typing import Annotated
@@ -30,6 +31,8 @@ def main(
         typer.Option(help="Enable auto setup before running."),
     ] = True,
 ):
+    start_time = time.time()
+
     if autosetup:
         setup(source=source, db_url=db_url, debug=debug)
     else:
@@ -43,6 +46,7 @@ def main(
             debug=debug,
         ),
     )
+    print(f"Total time: {(time.time() - start_time):.3f}")
 
 
 if __name__ == "__main__":
