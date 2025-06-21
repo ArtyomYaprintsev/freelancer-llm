@@ -10,8 +10,8 @@ class Freelancer(Base):
     __tablename__ = "freelancers"
 
     class ProjectType(IntEnum):
-        FIXED = 0
-        HOURLY = 1
+        Fixed = 0
+        Hourly = 1
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=False)
 
