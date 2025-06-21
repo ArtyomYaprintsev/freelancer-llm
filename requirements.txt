@@ -2,8 +2,6 @@ sqlalchemy
 
 pandas
 
-kaggle
-
 langchain
 langchain-gigachat
 
